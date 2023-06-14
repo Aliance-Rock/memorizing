@@ -1,0 +1,7 @@
+<h1>Словарь</h1>
+<label>
+  Введите текст для добавления в словарь:
+  <input type="text" #textInput>
+  <button #addDictionaryButton (click)="onAddTextToDictionary(textInput.value)">Добавить в словарь</button>
+</label>
+<app-translate-list></app-translate-list>

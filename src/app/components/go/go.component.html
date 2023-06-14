@@ -1,0 +1,13 @@
+<h1>Обучение:</h1>
+<h3>Обучающие слова:</h3>
+<form [formGroup]="goForm">
+  <input [hidden]="true" formControlName="testResult" />
+  <div *ngFor="let goWord of goWords" class="form-row">
+    <label>
+      {{goWord.word1}}
+      <input [formControlName]="goWord.word1">
+      <div *ngIf="!goForm.get('testResult')!.errors" class="test-passed"></div>
+    </label>
+    <div *ngIf="goForm.get(goWord.word1)!.errors"></div>
+  </div>
+</form>

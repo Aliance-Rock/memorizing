@@ -1,0 +1,12 @@
+.ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+background-color: aquamarine;
+  list-style: none;
+  font-size: 1.5rem;
+}
+li  {
+  text-decoration: none;
+}
+

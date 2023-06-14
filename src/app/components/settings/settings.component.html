@@ -1,0 +1,27 @@
+<h1>Настройки:</h1>
+<form>
+  <div class="form-row">
+    <label>
+      С какого языка:
+      <input type="text" [formControl]="fromLang" required>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      На какой:
+      <input type="text" [formControl]="toLang" required>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      Количество недавно добавленных слов:
+      <input type="number" [formControl]="readTranslatesCount" [min]="1" required>
+    </label>
+  </div>
+  <div class="form-row">
+    <label>
+      Количество обучающих слов:
+      <input type="number" [formControl]="goWordsCount" [min]="1" required>
+    </label>
+  </div>
+</form>
